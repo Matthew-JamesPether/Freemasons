@@ -1,0 +1,350 @@
+<!--Defines the html version-->
+<!DOCTYPE html>
+
+<!--Opens the web page and "en" declares english as the primary language-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- added the website as the title -->
+    <title>Curious about Freemasonry?</title>
+
+    <!-- Link tags for the css style sheet, icon and font-awesome-->
+    <link rel="stylesheet" href="Styles/LandingPage.css" type="text/css" />
+    <link rel="icon" href="./Images/masonic_icon.webp" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <!-- This will display the content of the website -->
+  <body>
+    <!-- A wrapper class -->
+    <div class="wrapper">
+      <!-- A header tag to separate components from other tags   -->
+      <header class="header">
+        <h1>
+          Uncover the Secrets of Freemasonry: A Brotherhood Built on Integrity
+          and Enlightenment
+        </h1>
+      </header>
+
+      <!-- A div tag to contain a form tag -->
+      <div class="contact-container">
+        <form
+          action="https://gmail.us22.list-manage.com/subscribe/post?u=cd3e3380477cf476388436d0f&amp;id=6ac762a776&amp;f_id=0023dae1f0"
+          method="post"
+          id="contactForm"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_self"
+        >
+          <!-- Contains the input text tags  -->
+          <div class="container-inputs">
+            <h2>Tell us a little about yourself</h2>
+            <div class="input-container">
+              <label for="mce-FNAME">Name & Surname: </label
+              ><input
+                type="text"
+                name="FNAME"
+                class="contact-input"
+                id="mce-FNAME"
+                value=""
+                placeholder="Name & Surname..."
+                autocomplete="name"
+                required
+              />
+            </div>
+            <br />
+            <div class="input-container">
+              <label for="mce-EMAIL">Email: </label
+              ><input
+                type="email"
+                name="EMAIL"
+                class="contact-input"
+                id="mce-EMAIL"
+                value=""
+                placeholder="example@gmail.com"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <br />
+            <div class="input-container">
+              <label for="mce-PHONE">Contact number: </label>
+              <div>
+                <span>+27</span>
+                <input
+                  type="text"
+                  name="PHONE"
+                  class="contact-input"
+                  id="mce-PHONE"
+                  value=""
+                  autocomplete="tel"
+                  placeholder="00-000-0000"
+                  pattern="[0-9]{2}-[0-9]{3}-[0-9]{4}"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Contains the input radio button tags -->
+          <div class="radio-button_container">
+            <h3>
+              To proceed to the next step in your journey you need to answer Yes
+              to the following questions below
+            </h3>
+
+            <!-- Question 1 -->
+            <div class="question">
+              <label class="radio-label" for="radio-group1"
+                >Are you a Male?</label
+              >
+              <div id="radio-group1">
+                <input
+                  class="radio-input"
+                  id="quest-one-yes"
+                  type="radio"
+                  name="question1"
+                  value="yes"
+                  onclick="handleChange('question1', 'yes')"
+                />
+                <label for="quest-one-yes">Yes</label>
+
+                <input
+                  class="radio-input"
+                  id="quest-one-no"
+                  type="radio"
+                  name="question1"
+                  value="no"
+                  onclick="handleChange('question1', 'no')"
+                />
+                <label for="quest-one-no">No</label>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+              <label class="radio-label" for="radio-group2"
+                >Are you at least 21 years old?</label
+              >
+              <div id="radio-group2">
+                <input
+                  class="radio-input"
+                  id="quest-two-yes"
+                  type="radio"
+                  name="question2"
+                  value="yes"
+                  onclick="handleChange('question2', 'yes')"
+                />
+                <label for="quest-two-yes">Yes</label>
+
+                <input
+                  class="radio-input"
+                  id="quest-two-no"
+                  type="radio"
+                  name="question2"
+                  value="no"
+                  onclick="handleChange('question2', 'no')"
+                />
+                <label for="quest-two-no">No</label>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+              <label class="radio-label" for="radio-group3"
+                >Do you believe in a higher power?</label
+              >
+              <div id="radio-group3">
+                <input
+                  class="radio-input"
+                  id="quest-three-yes"
+                  type="radio"
+                  name="question3"
+                  value="yes"
+                  onclick="handleChange('question3', 'yes')"
+                />
+                <label for="quest-three-yes">Yes</label>
+
+                <input
+                  class="radio-input"
+                  id="quest-three-no"
+                  type="radio"
+                  name="question3"
+                  value="no"
+                  onclick="handleChange('question3', 'no')"
+                />
+                <label for="quest-three-no">No</label>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+              <label class="radio-label" for="radio-group4"
+                >I receive a regular source of income?</label
+              >
+              <div id="radio-group4">
+                <input
+                  class="radio-input"
+                  id="quest-four-yes"
+                  type="radio"
+                  name="question4"
+                  value="yes"
+                  onclick="handleChange('question4', 'yes')"
+                />
+                <label for="quest-four-yes">Yes</label>
+
+                <input
+                  class="radio-input"
+                  id="quest-four-no"
+                  type="radio"
+                  name="question4"
+                  value="no"
+                  onclick="handleChange('question4', 'no')"
+                />
+                <label for="quest-four-no">No</label>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+              <label class="radio-label" for="radio-group5"
+                >Are you fluent in English/Afrikaans?</label
+              >
+              <div id="radio-group5">
+                <input
+                  class="radio-input"
+                  id="quest-five-yes"
+                  type="radio"
+                  name="question5"
+                  value="yes"
+                  onclick="handleChange('question5', 'yes')"
+                />
+                <label for="quest-five-yes">Yes</label>
+
+                <input
+                  class="radio-input"
+                  id="quest-five-no"
+                  type="radio"
+                  name="question5"
+                  value="no"
+                  onclick="handleChange('question5', 'no')"
+                />
+                <label for="quest-five-no">No</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contains the textarea tags -->
+          <div class="container-textareas">
+            <div class="textarea-container">
+              <p>What is your understanding of freemasonry?</p>
+              <textarea
+                name="QUESONE"
+                class="textareas"
+                id="mce-QUESONE"
+                value=""
+                placeholder="Type here..."
+                rows="3"
+                style="resize: none; width: 100%"
+                maxlength="500"
+                required
+              ></textarea>
+            </div>
+            <div class="textarea-container">
+              <p>What are you expecting in freemasonry?</p>
+              <textarea
+                type="text"
+                name="QUESTWO"
+                class="textareas"
+                id="mce-QUESTWO"
+                value=""
+                rows="3"
+                placeholder="Type here..."
+                maxlength="500"
+                style="resize: none; width: 100%"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <br />
+
+          <!-- Contains the input checkbox tags and submit button -->
+          <div class="container-checks">
+            <!-- Question 1 -->
+            <div class="checkbox-container">
+              <input
+                class="checkbox-input"
+                type="checkbox"
+                id="checkbox1"
+                name="checkbox1"
+                onclick="handleCheckboxChange()"
+              />
+              <label for="checkbox1">I am employed.</label>
+            </div>
+            <!-- Question 2 -->
+            <div class="checkbox-container">
+              <input
+                class="checkbox-input"
+                type="checkbox"
+                id="checkbox2"
+                name="checkbox2"
+                onclick="handleCheckboxChange()"
+              />
+              <label for="acknowledge">
+                I understand and acknowledge that as a member, I will be
+                responsible for annual fees, supporting charitable activities,
+                fundraising efforts, and covering the cost of dinning fees.
+              </label>
+            </div>
+            <!-- Question 3 -->
+            <div class="checkbox-container">
+              <input
+                class="checkbox-input"
+                type="checkbox"
+                id="checkbox3"
+                name="checkbox3"
+                onclick="handleCheckboxChange()"
+              />
+              <label for="checkbox3"
+                >I read and consent to the
+                <a id="policy-link" href="PrivacyPolicy.html"
+                  >Privacy Policy</a
+                ></label
+              >
+            </div>
+
+            <button type="submit" id="submitButton">
+              Add me to the waiting list
+            </button>
+          </div>
+
+          <!-- Mailchimp's bot checker -->
+          <div aria-hidden="true" style="position: absolute; left: -5000px">
+            /* real people should not fill this in and expect good things - do
+            not remove this or risk form bot signups */
+            <input
+              type="text"
+              name="b_cd3e3380477cf476388436d0f_6ac762a776"
+              tabindex="-1"
+              value=""
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- A message component -->
+    <div class="slide-message" id="slideMessage">
+      <i class="fa-solid fa-circle-check fa-lg" style="color: #07bc0c"></i>
+      Thank you we will be in touch
+    </div>
+
+    <!-- Calls the javascript file -->
+    <script type="text/javascript" src="LandingPage.js"></script>
+  </body>
+</html>
