@@ -81,7 +81,7 @@ const addData = async (formData) => {
     .catch((error) => console.error("Fetching IP:", error));
 
   // Fetches the users location using their IP address
-  await fetch(`http://ip-api.com/json/${ip}?fields=country`)
+  await fetch(`https://ip-api.com/json/${ip}?fields=country`)
     .then((response) => response.json())
     .then((data) => {
       formData.set("LOCATION", `${data.country}`);
